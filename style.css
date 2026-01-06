@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --main-color: rgb(177, 243, 245);
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.logo{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+span{
+    background: linear-gradient(
+        90deg, rgb(170, 227, 231) 10%, rgb(38, 230, 255) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a{
+    color: var(--text-color);
+    margin-left: 3rem;
+    transition: 0.4s ease-in-out;
+    border-bottom: 1px solid transparent;
+    font-weight: 800;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: 0.3s ease-in-out;
+    border-bottom: 1px solid var(--main-color);
+}
+section{
+    min-height: 100vh;
+    padding: 8rem 10%;
+}
+.current-date{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    background: linear-gradient(
+        270deg, rgb(231, 222, 170) 10%, rgb(38, 230, 255) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: -10rem;
+}
+.intro-content h1{
+    font-weight: 900;
+    margin-top: 1.5rem;
+    line-height: 1;
+    font-size: 5rem;
+}
+.intro-content h3 {
+    font-weight: 700;
+    margin: 1rem 0;
+    line-height: 2;
+    font-size: 3rem;
+}
+.intro-content h4{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.intro-content p{
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.resume {
+    padding-bottom: 0rem;
+    padding-top: 5rem;
+}
+article h2{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2;
+}
+article h4{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgba(255, 255, 255, 0.747);
+    margin-bottom: -0.5rem;
+}
+article h5{
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: rgb(161, 159, 159);
+    margin-bottom: 1rem;
+}
+article ul {
+    margin-left: 1rem;
+}
+article ul li{
+    line-height: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+article p {
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+th, td{
+    padding: 1rem;
+    text-align: left;
+}
+.gradient-butto{
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        90deg, orange, red
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+}
+.gradient-button{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg, rgb(0, 255, 242), rgb(0, 17, 255)
+    );
+    color: white; 
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    box-shadow: 0 0 5px #5ddbe4;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.gradient-button:hover{
+    box-shadow: 0 0 1rem #5ddbe4, 0 0 2rem #144db8, 0 0 3rem #11416d;
+}
+.logo{
+    width: 2rem;
+}
+.colored-logo{
+    width: 5rem;
+    background-color: white;
+}
+.footer p{
+    color: var(--text-color);
+    width: 100%;
+    text-align: right;
+    font-size: 1rem;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="resume.html" class="logo">
+            Phat <span>Truong</span>
+        </a>
+        <nav class="navbar">
+            <a href="cover-letter.html">Cover Letter</a>
+            <a href="career-goals.html">Career Goals</a>
+        </nav>
+    </header>
+    <section class="intro" id="intro">
+        <div class="intro-content">
+            <div class="current-date" id="current-date"></div>
+            <h1>Hello, it's <span>Phat</span></h1>
+            <h3>I'm a <span>QA Engineer</span></h3>
+            <h4>Summary</h4>
+            <p>3+ years of experience in QA testing WiFi and BT Protocols for IoT devices through Apple, Amazon, Google, and AT&T projects. <br><br>Specializes in automating manual work and data collection with various tools and programming languages like Python, Linux/Bash, and MS Excel.</p><hr>
+        </div>
+    </section>
+    <section class="resume" id="resume-content">
+        <article>
+            <h2><img src="assets/Apple_logo.svg" alt="Apple" class="logo"> Apple</h2>
+            <h4>Jun 25' - Present</h4>
+            <h5>Cupertino, Califonia, United States</h5>
+            <p><em>(Contracted via) HID devices automation for Apple Pencils, MacBooks, and iPhones.</em></p>
+            <ul>
+                <li>Oversee more than 100 different devices with various models for regression testing for different teams in <strong>HID QE</strong>.</li>
+                <li>Create, update, and maintain test agents responsible for hosting DUTs.</li>
+                <li>Maintain and oversee multiple pipelines on Apple Test Platform for various teams.</li>
+            </ul>
+            <p><strong>Skills:</strong> Ansible</p>
+          </article>
+          <article>
+            <h2><img src="assets/Lab126_logo.png" alt="Apple" class="colored-logo"> Amazon Lab126</h2>
+            <h4>Mar 23' - Aug 24' <em>&nbsp;&nbsp;&nbsp;1 yr 6 mos</em></h4>
+            <h5>Sunnyvale, Califonia, United States</h5>
+            <p><em>(Contracted with Capgemini) QA Engineer specializes in BT testing for Echo and FireTV devices.</em></p>
+            <ul>
+                <li>Improved regression testing efficiency by implementing automated processes for 10 device models with <em>TestRail API</em> and JIRA report.</li>
+                      <li>Administered onboarding iOS and Android test setups with Selenium for MAP and PBAP testing.</li>
+                      <li>Designed 5 test cases for button pusher robot to test compatibilities with legacy BT speakers.</li>
+            </ul>
+            <p><strong>Skills:</strong> Python, Linux, Data Analysis</p>
+          </article>
+          
+          <article>
+            <h2><img src="assets/Google_logo.svg" alt="Google" class="logo"><strong>oogle</strong></h2>
+            <h4>Jul 22' - Mar 23' <em>&nbsp;&nbsp;&nbsp;9 mos</em></h4>
+            <h5>Sunnyvale, Califonia, United States</h5>
+            <p><em>(Contracted with Capgemini) Automation Engineer for Nest Wi-Fi devices testing.</em></p>
+            <ul>
+                <li>Developed Rate vs Range Wi-Fi vs. Thread overnight testing for Nest routers.</li>
+                <li>Managed dashboards from 12 different test data sets with Apps Script and Google Plx.</li>
+                <li>Revised <em>Adaptive Rate Limit</em> (ARL) testing for IPv4/6 UL/DL with bash using iperf.</li>
+            </ul>
+            <p><strong>Skills:</strong> Microsoft Excel, Google Plx, Bluetooth, Wi-Fi</p>
+          </article>
+    </section>
+    <section class="table-section" id="table-section">
+        <table class="license-table" id="license-table">
+            <caption>Licenses and Certifications</caption>
+            <tr>
+              <th>Name</th>
+              <th>Issued Date</th>
+              <th>Issuer</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td>Foundations of User Experience (UX) Design</td>
+              <td><mark>Jul 21'</mark></td>
+              <td>Google</td>
+              <td><a href="https://www.coursera.org/account/accomplishments/verify/QLFC3L2BJ5UC" class="gradient-button">Show Credentials</a></td>
+            </tr>
+            <tr>
+                <td>Introduction to Data Analytics</td>
+                <td><mark>Sep 22'</mark></td>
+                <td>IBM Skills Network</td>
+                <td><a href="https://www.coursera.org/account/accomplishments/certificate/HVSW7ESJYZ2B" class="gradient-button">Show Credentials</a></td>
+            </tr>
+            <tr>
+                <td>Excel Basics for Data Analysis</td>
+                <td><mark>Feb 23'</mark></td>
+                <td>IBM Skills Network</td>
+                <td><a href="https://www.coursera.org/account/accomplishments/verify/9YYG655NYP4N" class="gradient-button">Show Credentials</a></td>
+            </tr>
+            <tr>
+                <td>Data Visualization and Dashboards with Excel and Cognos</td>
+                <td><mark>Mar 23'</mark></td>
+                <td>IBM Skills Network</td>
+                <td><a href="https://www.coursera.org/account/accomplishments/verify/TCXERKDJYFMW" class="gradient-button">Show Credentials</a></td>
+            </tr>
+          </table>
+    </section>
+</body>
+<script>
+    function displateCurrentDate() {
+        const now = new Date()
+        const datetime = now.toDateString();
+        const timeOptions = {
+            hour: '2-digit',
+            minute: '2-digit'
+        }
+        const timeNow = now.toLocaleTimeString(undefined, timeOptions);
+        document.getElementById('current-date').innerHTML = "Today is: " + datetime + ". It's curently: " + timeNow;
+    }
+    displateCurrentDate()
+</script>
+<footer class="footer">
+    <p><em>Last Updated Jan 2026</em></p>
+</footer>
+</html>
