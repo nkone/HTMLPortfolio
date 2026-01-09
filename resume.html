@@ -109,10 +109,10 @@
         const timeOptions = {
             hour: '2-digit',
             minute: '2-digit'
-        }
+        };
         const timeNow = now.toLocaleTimeString(undefined, timeOptions);
         document.getElementById('current-date').innerHTML = "Today is: " + datetime + ". It's curently: " + timeNow;
-        console.log(timeNow);
+        console.log("Date: " + datetime + " Time: " + timeNow);
     }
     displateCurrentDate();
 </script>
