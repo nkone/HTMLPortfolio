@@ -263,3 +263,6 @@ th, td{
     height: 5rem;
     overflow: hidden;
 }
+.goals-content ol {
+    list-style: upper-roman;
+}
