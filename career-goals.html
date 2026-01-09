@@ -11,6 +11,9 @@
     <div class="video-container">
         <video src="assets/hyperspace.mp4" class="background-video" autoplay muted loop></video>
     </div>
+    <audio controls>
+        <source src="assets/keyboard_hitsound.mp3" type="audio/mp3">
+    </audio>
     <header class="header">
         <a href="resume.html" class="logo">
             Phat <span>Truong</span>
@@ -20,61 +23,64 @@
             <a href="career-goals.html" class="active">Career Goals</a>
         </nav>
     </header>
-    <section class="carrer-goals">
-        <div class="goals-content" id="goals-content">
-            <ol>
-                <li>
-                    Land a stable engineering job that would support my family.
-                </li>
-                <li>
-                    Complete my bachelor's degree in software engineering by the end of <strong>2026</strong>.
-                </li>
-                <li>
-                    Improve my communication skills at workplace and expand my network.
-                </li>
-            </ol>
-        </div>
-        <div class="profile-img" id="profile-img">
-            <img src="assets/profile_avatar.jpg" alt="Phat Truong">
-        </div>
-    </section>
-    <section class="contact" id="contact">
-        <h1>Contact <span>me</span></h1>
-        <div class="contact-form" id="contact-form">
-            <form action="https://wp.zybooks.com/form-viewer.php" method="post" id="contact-form">
-                <div class="input-group">
-                    <div class="input-box">
-                        <input type="text" placeholder="First Name" name="first-name" id="first-name">
-                        <input type="text" placeholder="Last Name" name="last-name" id="last-name">
-                        <input type="text" placeholder="Company Name" name="company-name" id="company-name">
+    <main>
+        <section class="carrer-goals">
+            <div class="goals-content" id="goals-content">
+                <ol>
+                    <li>
+                        Land a stable engineering job that would support my family.
+                    </li>
+                    <li>
+                        Complete my bachelor's degree in software engineering by the end of <strong>2026</strong>.
+                    </li>
+                    <li>
+                        Improve my communication skills at workplace and expand my network.
+                    </li>
+                </ol>
+            </div>
+            <div class="profile-img" id="profile-img">
+                <img src="assets/profile_avatar.jpg" alt="Phat Truong">
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>Contact <span>me</span></h1>
+            <div class="contact-form" id="contact-form">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post" id="contact-form">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="First Name" name="first-name" id="first-name">
+                            <input type="text" placeholder="Last Name" name="last-name" id="last-name">
+                            <input type="text" placeholder="Company Name" name="company-name" id="company-name">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email" name="email-address" id="email-address">
+                            <input type="tel" placeholder="Phone Number" name="phone-number" id="phone-number">
+                        </div>            
                     </div>
-                    <div class="input-box">
-                        <input type="email" placeholder="Email" name="email-address" id="email-address">
-                        <input type="tel" placeholder="Phone Number" name="phone-number" id="phone-number">
-                    </div>            
-                </div>
-                <div class="input-group2">
-                    <fieldset>
-                        <legend>Best time to contact:</legend>
-                        <input type="radio" name="contact-time" id="time-am" value="am">
-                        <label for="time-am">am</label>
-                        <input type="radio" name="contact-time" id="time-pm" value="pm">
-                        <label for="time-pm">pm</label>
-                        <input type="radio" name="contact-time" id="time-any" value="any">
-                        <label for="time-any">anytime</label><br>
-                    </fieldset>
-                    <label for="prefer-method">Prefer method</label>
-                    <select name="prefer-method" id="prefer-method">
-                        <option value="phone">Phone</option>
-                        <option value="email">Email</option>
-                        <option value="text">Text</option>
-                    </select>
-                    <textarea name="message" id="message" placeholder="Your message..." cols="30" rows="10"></textarea>
-                    <input type="submit" value="Submit" class="gradient-button">
-                </div>                    
-            </form>
-        </div>
-    </section>
+                    <div class="input-group2">
+                        <fieldset>
+                            <legend>Best time to contact:</legend>
+                            <input type="radio" name="contact-time" id="time-am" value="am">
+                            <label for="time-am">am</label>
+                            <input type="radio" name="contact-time" id="time-pm" value="pm">
+                            <label for="time-pm">pm</label>
+                            <input type="radio" name="contact-time" id="time-any" value="any">
+                            <label for="time-any">anytime</label><br>
+                        </fieldset>
+                        <label for="prefer-method">Prefer method</label>
+                        <select name="prefer-method" id="prefer-method">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                        </select>
+                        <textarea name="message" id="message" placeholder="Your message..." cols="30" rows="10"></textarea>
+                        <input type="submit" value="Submit" class="gradient-button">
+                    </div>                    
+                </form>
+            </div>
+        </section>
+    </main>
+    
 </body>
 <script>
     const hitSound = new Audio("assets/keyboard_hitsound.mp3");
